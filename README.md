@@ -2,22 +2,22 @@
 This repository provides a conceptual neural population model illustrating how DA-only and DA+Glu VTA populations can differentially bias action selection in appetitive vs aversive contexts, including simple knockout (KO) simulations.
 
 **Reproducibility & environment**
-Language: MATLAB (R2016b+; tested on R2018b+)
-Determinism: rng(42) set in the script
-Outputs: written to ./data/ with a timestamp
+Language: MATLAB (R2016b+; tested on R2018b+)  
+Determinism: rng(42) set in the script  
+Outputs: written to ./data/ with a timestamp  
 
 **Quick start**
-% From the repo root: \\
-open vta_daglu_conceptual_model.m \\
+% From the repo root:  
+open vta_daglu_conceptual_model.m  
 run vta_daglu_conceptual_model
 
-This generates three figures and a parameter bundle in ./data/:
-figure1_*: Reward CS+ hits (per-day mean ± SEM), Control vs VGluT2 KO
-figure2_*: Reward latency, Control vs VGluT2 KO
-figure3_*: Shock freezing fraction, Control vs DA/TH KO
-params_*.mat and params_*.json: full parameter structs (reward, shock, KOs, drives)
+This generates three figures and a parameter bundle in ./data/:  
+figure1_*: Reward CS+ hits (per-day mean ± SEM), Control vs VGluT2 KO  
+figure2_*: Reward latency, Control vs VGluT2 KO  
+figure3_*: Shock freezing fraction, Control vs DA/TH KO  
+params_*.mat and params_*.json: full parameter structs (reward, shock, KOs, drives)  
 
-**What the script does:** Two abstract VTA populations (DA-only, DA+Glu) receive a conditioned stimulus (CS) and a possible outcome (reward/shock/none). Population signals are synaptically filtered and combined to drive a single action-accumulation variable with a thresholded readout (hits in reward; freezing fraction in shock). Slow, event-driven gains with decay produce acquisition-like changes across simulated days (illustrative—not a specific learning rule). KOs scale transmitter weights to show qualitative contrasts aligned with recordings/behavior.
+**What the script does:** Two abstract VTA populations (DA-only, DA+Glu) receive a conditioned stimulus (CS) and a possible outcome (reward/shock/none). Population signals are synaptically filtered and combined to drive a single action-accumulation variable with a thresholded readout (hits in reward; freezing fraction in shock). Slow, event-driven gains with decay produce acquisition-like changes across simulated days (illustrative—not a specific learning rule). KOs scale transmitter weights to show qualitative contrasts aligned with recordings/behavior.  
 
 **Statistical analysis reported**
 Curve comparisons (across days): permutation test on Euclidean (L2) distance between per-day group means; permutation unit = blocks (not trials)
