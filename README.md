@@ -30,7 +30,7 @@ Terminal performance: mean of the last 5 days
 **If you use or adapt this code, please cite:**
 Emily D. Prévost, Lucy Ward, Daniel Alas, Giulia Aimale, Sara Ikenberry, Katie Fox, Julianne Pelletier, Annie Ly, Jayson Ball, Zachary P Kilpatrick, Kailyn Price, Abigail M. Polter, David H. Root. "Untangling dopamine and glutamate in the ventral tegmental area." (2025)
 
-License
-- **Code**: MIT © 2025, Zachary P Kilpatrick. See [`LICENSE`](LICENSE).
-- **Text & figures**: CC BY 4.0. See [`LICENSE-DOCS`](LICENSE-DOCS).
+**License:**
+**Code**: MIT © 2025, Zachary P Kilpatrick. See [`LICENSE`](LICENSE).  
+**Text & figures**: CC BY 4.0. See [`LICENSE-DOCS`](LICENSE-DOCS).
 
