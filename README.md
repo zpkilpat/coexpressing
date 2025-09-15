@@ -7,8 +7,8 @@ Determinism: rng(42) set in the script
 Outputs: written to ./data/ with a timestamp
 
 **Quick start**
-% From the repo root:
-open vta_daglu_conceptual_model.m
+% From the repo root: \\
+open vta_daglu_conceptual_model.m \\
 run vta_daglu_conceptual_model
 
 This generates three figures and a parameter bundle in ./data/:
